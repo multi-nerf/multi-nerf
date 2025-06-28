@@ -28,6 +28,22 @@
       font-style: italic;
       margin-bottom: 1.5rem;
     }
+    .button-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .button-container button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button-container button:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +55,10 @@
   <p>
     We present <strong>MultiNeRF</strong>, a 3D watermarking method that embeds multiple uniquely keyed watermarks within images rendered by a single Neural Radiance Field (NeRF) model, whilst maintaining high visual quality. Our approach extends the TensoRF NeRF model by incorporating a dedicated watermark grid alongside the existing geometry and appearance grids. This extension ensures higher watermark capacity without entangling watermark signals with scene content. We propose a FiLM-based conditional modulation mechanism that dynamically activates watermarks based on input identifiers, allowing multiple independent watermarks to be embedded and extracted without requiring model retraining. MultiNeRF is validated on the NeRF-Synthetic and LLFF datasets, with statistically significant improvements in robust capacity without compromising rendering quality. By generalizing single-watermark NeRF methods into a flexible multi-watermarking framework, MultiNeRF provides a scalable solution for 3D content attribution.
   </p>
+
+  <div class="button-container">
+    <button onclick="window.location.href='supplementary_material.pdf'">View Supplementary Material</button>
+  </div>
 
 </body>
 </html>
